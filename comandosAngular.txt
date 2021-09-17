@@ -1,0 +1,10 @@
+ng new angular_p1
+
+ng serve
+
+ng generate component container * ng g c container
+
+ng g i interfaces/dogs
+
+ng g m home --routing *modulo con ruta
+ng g m components * sin ruta
