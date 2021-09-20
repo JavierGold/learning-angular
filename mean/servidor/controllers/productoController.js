@@ -3,6 +3,6 @@
 
 exports.crearProducto = async (req, res) => {
 
-    console.log('desde producto controller');
+    console.log(req.body);
 }
 
