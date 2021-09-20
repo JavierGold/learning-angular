@@ -4,7 +4,7 @@
   "description": "MEAN API",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon ."
+    "dev": "nodemon ."
   },
   "author": "Javier H",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.6"
