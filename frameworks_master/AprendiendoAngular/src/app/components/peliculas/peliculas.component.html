@@ -19,7 +19,7 @@
   <div *ngFor="let pelicula of peliculas">
     <h3>{{pelicula.title}}</h3>
     <img width="150px" src="{{pelicula.image}}" alt="">
-    <div  [style.background]="pelicula.year > 2016 ? 'green' : 'red' ">
+    <div   [style.background]="pelicula.year > 2016 ? 'green' : 'red' ">
       {{pelicula.year}}
     </div>
   </div>
