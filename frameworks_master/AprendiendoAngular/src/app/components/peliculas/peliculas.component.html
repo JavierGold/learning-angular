@@ -1,1 +1,26 @@
-<p>peliculas works!</p>
+<h2 class="subheader">Películas</h2>
+
+<h2>Número de películas</h2>
+{{peliculas.length}}
+
+<div *ngIf="peliculas.length <=3">
+  Hay pocas películas
+</div>
+
+<div *ngIf="peliculas.length > 3">
+  Hay muchas películas
+</div>
+
+<hr>
+<br>
+
+<h2 class="subheader">Listado de películas</h2>
+<div *ngIf="peliculas">
+  <div *ngFor="let pelicula of peliculas">
+    <h3>{{pelicula.title}}</h3>
+    <img width="150px" src="{{pelicula.image}}" alt="">
+    <div  [style.background]="pelicula.year > 2016 ? 'green' : 'red' ">
+      {{pelicula.year}}
+    </div>
+  </div>
+</div>
